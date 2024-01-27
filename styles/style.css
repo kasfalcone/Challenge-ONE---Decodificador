@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500;700;900&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-segundaria:#232D3F;
+    --cor-terciaria: #005B41;
+    --cor-hover: #008170;
+    --cor: #282829;
+    --cor-atencao: rgb(183, 187, 183);
+   
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Encode Sans SC', sans-serif;
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: var(--cor-primaria);
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6%;
+    margin-right: 6%;
+    gap: 1rem;
+    
+}
+
+header {
+    width: 100%;
+}
+
+header .logo {
+    padding: 1rem;
+    margin-left: 1rem;
+    width: 5rem;
+    border-radius: 25%;
+}
+
+.apresentacao_principal {
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    height: 100%;
+    margin-top: 3rem;
+
+    align-content: center;
+}
+
+.input-text {
+    height: 60vh;
+    width: 100%;
+    background-color: transparent;
+    border-style: none;
+    resize: none;
+    font-size: 2rem;
+    color: var(--cor-atencao);
+    font-weight: 500;
+    display: flex;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+    box-shadow: 0 0 0 0;
+    border: 5 none;
+    outline: 0;
+}
+
+.input {
+    display: flex;
+    font-weight: 700;
+    font-size: 0.60rem;
+    justify-content: flex-start;
+    line-height: 150%;
+    color: var( --cor-atencao);
+    align-items: center;
+    opacity: 0.8;
+}
+
+.input img {
+    width: 0.75rem;
+    margin-right: 0.2rem;
+}
+
+.button {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+button {
+    border-radius: 1rem;
+    width: 10rem;
+    height: 2.5rem;
+    border: 2px solid var(--cor-terciaria);
+    font-family: 'Encode Sans SC', sans-serif;
+    background-color: transparent;
+    color: var(--cor-terciaria);
+}
+
+button:hover {
+    color: var( --cor-atencao);
+    border-color: var(- --cor-atencao);
+    background-color: var(--cor-segundaria);
+}
+
+.output, .div_output {
+    background-color: var(--cor);
+    color: var(--cor-atencao);
+    border-radius: 1rem;
+    height: 35rem;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around; 
+    align-items: center;
+}
+
+.div_output {
+    display: none;
+}
+
+.div_output_vazio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 35rem;
+    width: 25rem;
+}
+
+.div_output_vazio img {
+    width: 20rem;
+    margin-top: 5rem;
+}
+
+.paragrafo_output_vazio {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 4rem;
+    width: 100%;
+    text-align: center;
+}
+
+.paragrafo2_output_vazio {
+    font-size: 0.7rem;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    text-align: center;
+}
+
+.output-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 75%;
+    width: 90%;
+    overflow: auto;
+    word-break: break-all;
+}
+
+.btn-copiar {
+    color: var( --cor-terciaria);
+}   
+
+.btn-copiar:hover {
+    border-color: var(--cor-hover);
+    color: var(--cor-hover);
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-segundaria);
+    margin-top: 3rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    opacity: 60%;
+    text-decoration: none;
+}
+
+.footer-p {
+    font-size: 0.5rem;
+    color: var(--cor-atencao);
+}
+
+a {
+    color: var(--cor-atencao);
+}
+
+ion-icon:hover {
+    color: var(--cor-hover);
+    opacity: 100%;
+}
+
+@media (max-width: 1200px) {
+    html {
+        width: 100%;
+        height: 100%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        margin: 10%;
+    }
+
+    .apresentacao_principal {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .botoes {
+        justify-content: center;
+    }
+
+    .output{
+        width: auto;
+
+    }
+
+
+    
+}

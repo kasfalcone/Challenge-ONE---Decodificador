@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador e Codificador</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+<body>
+    <header>
+        <img class="logo" src="/assets/logo.png" alt="logo kas">
+    </header>
+    <main>
+       <section class="apresentacao_principal">
+        <textarea class="input-text" id="input-text" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+           <div class="input">
+                <img src="./assets/exclamation-circle-fill.svg" alt="Imagem Exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="button">
+                <button id="btn-criptografar" onclick="criptografar()">Criptografar</button>
+                <button id="btn-descriptografar" onclick="descriptografar()">Descriptografar</button>
+            </div>
+        </section>
+        <div class="output" id="output">
+            <div class="div_output">
+            </div>
+            <div class="div_output_vazio">
+                <img src="./assets/seg5.jpg" alt="">
+                <p class="paragrafo_output_vazio">Nenhuma mensagem encontrada</p>
+                <p class="paragrafo2_output_vazio">Digite um texto que você deseja <br> criptografar ou descriptografar.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="rodape_icons">
+            <a href="https://www.instagram.com/kasfalcone" target="_blank"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+            <a href="https://github.com/kasfalcone"target="_blank"><ion-icon name="logo-github" size="large"></ion-icon></a>
+            <a href="https://www.linkedin.com/in/kemellyn-cristina-falcone-00ab64210/" target="_blank"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+        </div>
+        <p class="footer-p">Desenvolvido por Kasfalcone.</p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./src/script.js"></script>
+</body>
+
+</html>

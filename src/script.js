@@ -15,7 +15,7 @@ function criptografar(){
     let textoCriptgrafado = textoDigitado.replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/e/g, 'enter').replace(/o/g, 'ober').replace(/u/g, 'ufat');
     limparTela();
     mostrar(textoCriptgrafado);
-    textInput.value = 'Digite o seu texto aqui ';
+    textInput.value = ' ';
 }
 
 function descriptografar(){
